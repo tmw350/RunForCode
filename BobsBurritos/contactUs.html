@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bob's Burrito Barn</title>
+	</head>
+	<body>
+		<div id="title">
+			<h1>Bob's Burrito Barn</h1>
+		</div>
+		<div id="navigation">
+			<hr />
+			<p><a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contactUs.html">Contact Us</a><p>
+			<hr />
+		</div>
+		<div id="contactRequestForm">
+		<form action="submit.html" method="POST">
+			<label for="fullName">Name:</label>
+			<input type="text" id="fullName" name="fullName"> <br />
+			<br />
+			<label for="emailAddress">Email:</label>
+			<input type="text" id="emailAddress" name="emailAddress"> <br />
+			<br />
+			<label for="phoneNumber">Phone:</label>
+			<input type="text" id="phoneNumber" name="phoneNumber"> <br />
+			<p>Reason for Inquiry:
+			<select id="contactReason" name="contactReason">
+				<option value="catering" selected>Catering</option>
+				<option value="privateParty">Private Party</option>
+				<option value="feedback">Feedback</option>
+				<option value="other">Other</option>
+			</select></p>
+			<label for="extrainfo">Additional Information
+			<textarea id="extraInfo"></textarea></label><br />
+			<p>Have you been to the restaurant?  
+				<input type="radio" id="choice1" name="priorVisit" value="no" checked>
+				<label for="choice1">No</label>  
+				<input type = "radio" id="choice2" name="priorVisit" value="yes">
+				<label for="choice2">Yes</label>   
+			</p>
+			<p>Best days to contact you:
+				<input type="checkbox" id="mon" name="contactDay" value="mon">
+				<label for="mon">M</label>
+				<input type="checkbox" id="tue" name="contactDay" value="tue">
+				<label for="tue">T</label>
+				<input type="checkbox" id="wed" name="contactDay" value="wed">
+				<label for="wed">W</label>
+				<input type="checkbox" id="thu" name="contactDay" value="thu">
+				<label for="thu">Th</label>
+				<input type="checkbox" id="fri" name="contactDay" value="fri">
+				<label for="fri">F</label>				
+			</p>
+			<input type="submit" name="submit" value="Send Request">
+		</form>
+		<br />
+		</div>	
+		<div id="footer">
+			<hr />
+			<div id="addressInfo">
+				<div class="content"><p>5555 Nicolet Ave, Minneapolis, MN, 55408</p>
+				<p>(612) 555-9876</p></div>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

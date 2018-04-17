@@ -1,0 +1,48 @@
+/*common across all pages */
+
+body {
+	background-color: #523722;
+	text-align: center;
+}
+
+#description {
+	font-family: 'Allerta', sans-serif;
+	font-size: 12px;
+	background-color: #eb781a;
+}
+
+#topOfPage {
+	font-family: 'Squada One', cursive;
+	font-size: 24px;
+	color: #b81f02;
+}
+
+#navigation {
+	font-family: 'Allerta', sans-serif;
+	font-size: 16px;
+	color: #eb781a;
+}
+
+a:link {
+	color: #eb781a;
+}
+
+a:visited {
+	color: #33c15e;
+}
+
+a:hover {
+	color: #eb781a;
+	font-weight: bold;
+}
+
+a:active {
+	color: #eb781a;
+	text-decoration: none;
+}
+
+#footer {
+	font-family: 'Squada One', cursive;
+	font-size: 16px;
+	color: #eb781a;
+}

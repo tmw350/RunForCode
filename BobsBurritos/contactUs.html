@@ -2,9 +2,18 @@
 <html>
 	<head>
 		<title>Bob's Burrito Barn</title>
+		<link href="https://fonts.googleapis.com/css?family=Allerta|Squada+One" rel="stylesheet">
+		<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css">
+		<style>
+		#contactRequestForm {
+								background-color: #eb781a;
+				font-family: 'Allerta', sans-serif;
+				text-align: center;
+		}
+		</style>
 	</head>
 	<body>
-		<div id="title">
+		<div id="topOfPage">
 			<h1>Bob's Burrito Barn</h1>
 		</div>
 		<div id="navigation">
@@ -16,14 +25,15 @@
 		</div>
 		<div id="contactRequestForm">
 		<form action="submit.html" method="POST">
-			<label for="fullName">Name:</label>
-			<input type="text" id="fullName" name="fullName"> <br />
+		<br />
+			<label for="fullName" style="font-weight: bold;">Name:</label>
+			<input type="text" id="fullName" name="fullName" required> <br />
 			<br />
-			<label for="emailAddress">Email:</label>
-			<input type="text" id="emailAddress" name="emailAddress"> <br />
+			<label for="emailAddress" style="font-weight: bold;">Email:</label>
+			<input type="text" id="emailAddress" name="emailAddress" required> <br />
 			<br />
-			<label for="phoneNumber">Phone:</label>
-			<input type="text" id="phoneNumber" name="phoneNumber"> <br />
+			<label for="phoneNumber" style="font-weight: bold;">Phone:</label>
+			<input type="text" id="phoneNumber" name="phoneNumber" required> <br />
 			<p>Reason for Inquiry:
 			<select id="contactReason" name="contactReason">
 				<option value="catering" selected>Catering</option>
@@ -52,6 +62,7 @@
 				<label for="fri">F</label>				
 			</p>
 			<input type="submit" name="submit" value="Send Request">
+			<br />
 		</form>
 		<br />
 		</div>	

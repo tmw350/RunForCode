@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+	<!-- add bootstrap CSS via CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	
+	<!-- add bootstrap JaveScript via CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+	<!-- add local scripts -->
+	<script type="text/JavaScript" src="displayEvens.js"></script>
+	
+	<!-- add title here -->
+	<title>Display Evens</title>
+</head>
+<body>
+	<!-- add a heading -->
+	<div id="main">
+		<div id="header">
+			<h1>Display Evens Code-Along</h1>
+			<br />
+		</div>
+
+		<!-- set up a form to collect firstNum, lastNum, and step -->
+		<div class="form-group">
+			<!-- needs 3 text input boxes: Starting Number, Ending Number, and Step -->
+			Starting Number: <input type="text" class="form-control" id="firstNum">
+			<br />
+			Ending Number: <input type="text" class="form-control" id="lastNum">
+			<br />
+			Step: <input type="text" class="form-control" id="step">
+			<br />
+			
+			<!-- needs a submit button that says: Display Evens -->
+			<button class="btn btn-primary" onclick="displayEvens();">Display Evens</button>
+
+		</div>	
+
+		<!-- display the output from the displayEvens funtion -->
+		<div id="output">
+			<p id="results"></p>
+		</div>
+
+
+
+	</div>
+</body>
+</html>

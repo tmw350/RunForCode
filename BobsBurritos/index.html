@@ -1,38 +1,84 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Bob's Burrito Barn</title>
-		<link href="https://fonts.googleapis.com/css?family=Allerta|Squada+One" rel="stylesheet">
-		<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<div id="topOfPage">
-			<h1>Bob's Burrito Barn</h1>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport: content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Allerta|Squada+One" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<noscript>Please enable JavaScript for the best viewing experience</noscript>
+	<title>Bob's Burrito Barn</title>	
+</head>
+<body>
+<div class="container-fluid">
+	<div id="topOfPage">
+		<br />
+		<h1>Bob's Burrito Barn</h1>
+		<br />
+	</div>
+	<br />
+	<div id="navigation">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="contactUs.html">Contact Us</a></li>
+		</ul>
+	</div>
+	<br />
+	<div class="jumbotron">
+		<h1>Opening Soon!</h1>
+		<p>New location in St.Paul!</p>
+	</div>
+	<div id="topPicture">
+		<div class="image"><img src="images/burrito.jpg" style="margin: none; border: 5px; padding: 5px 22px 5px 21px; width: 347px; height: 130px;"></div>
+		<br />
 		</div>
-		<div id="navigation">
-			<hr />
-			<p><a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contactUs.html">Contact Us</a><p>
-			<hr />
-		</div>
-		<div id="main">
-			<div id="topPicture">
-				<div class="image"><img src="images/burrito.jpg" style="margin: none; border: 5px solid #33c15e ; padding: 5px 22px 5px 21px; width: 347px; height: 130px;"></div>
-				<br />
-				</div>
-			</div>
-			<div id="description">
-				<h1>Bob's Burrito Barn Description</h1>
-				<div class="content"><p>Your home for tasty burritos! We have burritos for the entire family. Come on down for our delicious breakfast burritos, which are available all day! Come on back for our lunch specials, and bring the whole family for our reasonable dinner deals!</p></div>
-			</div>
-		</div>
+	<div id="main">
+		<h3>About Bob's Burrito Barn</h3>
+		<p>Your home for tasty burritos! Stop by for our famous breakfast burritos - available all day! We have great deals for a quick lunch, and a menu sure to satisfy anyone in the family at dinner time.</p>
+	</div>
+        <div id="DemoCarousel" class="carousel slide" data-interval="4000" data-ride="carousel">
+            
+            <ol class="carousel-indicators">
+                <li data-target="#DemoCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#DemoCarousel" data-slide-to="1"></li>
+                <li data-target="#DemoCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+					<h1>Opening Soon!</h1>
+					<p>New location in St. Paul!</p>
+                </div>
+                <div class="item">
+                    <h1>Summer seasonal menu starts May 1st!</h1>
+                    <p>Select from 3 summer salads, and two salsas perfect for the hot weather</p>
+                </div>
+                <div class="item">
+                    <h1>Drink of the Month:</h1>
+                    <p>SG Special Brew</p>
+                </div>
+            </div>
+            <a class="carousel-control left" href="#DemoCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control right" href="#DemoCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+            </a>
+        </div>
+		<hr />
 		<div id="footer">
-			<hr />
 			<div id="addressInfo">
-				<div class="content"><p>5555 Nicolet Ave, Minneapolis, MN, 55408</p>
-				<p>(612) 555-9876</p></div>
-			</div>
-		</div>
-	</body>
+				<p>5555 Nicolet Ave, Minneapolis, MN, 55408</p>
+				<p>(612) 555-9876</p>
+			</div>		
+		</div>			
+    </div>
+	
+		
+</div>
+</body>
 </html>

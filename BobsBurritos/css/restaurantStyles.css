@@ -1,8 +1,9 @@
 /*common across all pages */
 
 body {
-	background-color: #523722;
+	background-color: #f2f2f2;
 	text-align: center;
+	font-family: 'Allerta', sans-serif;
 }
 
 #description {
@@ -14,14 +15,14 @@ body {
 #topOfPage {
 	font-family: 'Squada One', cursive;
 	font-size: 24px;
-	color: #b81f02;
+	color: #ad0000;
+	background-color: #e3c990;
 }
 
 #navigation {
 	font-family: 'Allerta', sans-serif;
 	font-size: 16px;
-	color: #eb781a;
-}
+}	
 
 a:link {
 	color: #eb781a;
@@ -44,5 +45,6 @@ a:active {
 #footer {
 	font-family: 'Squada One', cursive;
 	font-size: 16px;
-	color: #eb781a;
+	color: #ff775a;
+	background-color: #101112
 }

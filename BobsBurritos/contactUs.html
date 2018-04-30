@@ -3,76 +3,136 @@
 	<head>
 		<title>Bob's Burrito Barn</title>
 		<link href="https://fonts.googleapis.com/css?family=Allerta|Squada+One" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link href="css/restaurantStyles.css" rel="stylesheet" type="text/css">
 		<style>
 		#contactRequestForm {
-								background-color: #eb781a;
+				background-color: #eb781a;
 				font-family: 'Allerta', sans-serif;
 				text-align: center;
 		}
 		</style>
 	</head>
 	<body>
-		<div id="topOfPage">
-			<h1>Bob's Burrito Barn</h1>
-		</div>
-		<div id="navigation">
-			<hr />
-			<p><a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contactUs.html">Contact Us</a><p>
-			<hr />
-		</div>
-		<div id="contactRequestForm">
-		<form action="submit.html" method="POST">
-		<br />
-			<label for="fullName" style="font-weight: bold;">Name:</label>
-			<input type="text" id="fullName" name="fullName" required> <br />
-			<br />
-			<label for="emailAddress" style="font-weight: bold;">Email:</label>
-			<input type="text" id="emailAddress" name="emailAddress" required> <br />
-			<br />
-			<label for="phoneNumber" style="font-weight: bold;">Phone:</label>
-			<input type="text" id="phoneNumber" name="phoneNumber" required> <br />
-			<p>Reason for Inquiry:
-			<select id="contactReason" name="contactReason">
-				<option value="catering" selected>Catering</option>
-				<option value="privateParty">Private Party</option>
-				<option value="feedback">Feedback</option>
-				<option value="other">Other</option>
-			</select></p>
-			<label for="extrainfo">Additional Information
-			<textarea id="extraInfo"></textarea></label><br />
-			<p>Have you been to the restaurant?  
-				<input type="radio" id="choice1" name="priorVisit" value="no" checked>
-				<label for="choice1">No</label>  
-				<input type = "radio" id="choice2" name="priorVisit" value="yes">
-				<label for="choice2">Yes</label>   
-			</p>
-			<p>Best days to contact you:
-				<input type="checkbox" id="mon" name="contactDay" value="mon">
-				<label for="mon">M</label>
-				<input type="checkbox" id="tue" name="contactDay" value="tue">
-				<label for="tue">T</label>
-				<input type="checkbox" id="wed" name="contactDay" value="wed">
-				<label for="wed">W</label>
-				<input type="checkbox" id="thu" name="contactDay" value="thu">
-				<label for="thu">Th</label>
-				<input type="checkbox" id="fri" name="contactDay" value="fri">
-				<label for="fri">F</label>				
-			</p>
-			<input type="submit" name="submit" value="Send Request">
-			<br />
-		</form>
-		<br />
-		</div>	
-		<div id="footer">
-			<hr />
-			<div id="addressInfo">
-				<div class="content"><p>5555 Nicolet Ave, Minneapolis, MN, 55408</p>
-				<p>(612) 555-9876</p></div>
+		<div class="container-fluid">
+			<div id="topOfPage">
+				<br />
+				<h1>Bob's Burrito Barn</h1>
+				<br />
 			</div>
+			<br />
+			<div id="navigation">
+				<ul class="nav nav-tabs">
+					<li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li class="active"><a href="contactUs.html">Contact Us</a></li>
+				</ul>
 			</div>
+			<br />
+			<div id="contactRequestForm">
+				<form class="form-inline" action="submit.html" method="POST">
+					<br />
+					<div class="row">
+						<div class="form-group">
+							<label class="control-label col-sm-6" for="fullName" style="font-weight: bold;">Name:</label>
+								<div class="col-sm-2">
+									<input type="text" id="fullName" name="fullName" required>
+								</div>
+						</div>
+					</div>
+					<br />					
+					<div class="row">
+						<div class="form-group">
+							<label class="control-label col-sm-6" for="emailAddress" style="font-weight: bold;">Email:</label>
+								<div class="col-sm-2">
+									<input type="text" id="emailAddress" name="emailAddress" required>
+								</div>
+						</div>
+					</div>
+					<br />					
+					<div class="row">
+						<div class="form-group">	
+							<label class="control-label col-sm-6" for="phoneNumber" style="font-weight: bold;">Phone:</label>
+								<div class="col-sm-2">
+									<input type="text" id="phoneNumber" name="phoneNumber" required>
+								</div>
+						</div>
+					</div>
+					<br />					
+					<div class="row">
+						<div class="form-group">
+							<label for="contactReason" class="control-label col-sm-6">Reason for Inquiry:</label>
+							<div class="col-sm-2">
+								<select class="form-control" id="contactReason">
+								<option selected>Catering</option>
+								<option>Private Party</option>
+								<option>Feedback</option>
+								<option>Other</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="row">
+						<div class="form-group">
+							<label for="extrainfo" class="control-label col-sm-6">Additional Information</label>
+								<div class="col-sm-2">
+									<textarea class="form-control" id="extraInfo" rows="5"></textarea>
+								</div>
+						</div>
+					</div>	
+					<br />					
+					<div class="row">
+						<div class="form-check">
+							<div class="control-label col-sm-10">
+								Have you been to the restaurant?
+										<input class="form-check-input" name="priorVisit" type="radio" id="visitYes">
+										<label class="form-check-label" for "visitYes">Yes</label>
+										<input class="form-check-input" name="priorVisit" type="radio" id="visitNo">
+										<label class="form-check-label" for "visitYes">No</label>
+
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="row">
+							Best days to contact you:
+							<div class="form-check checkbox-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="mon">
+								<label class="form-check-label" for="inlineCheckbox1">M</label>
+							</div>
+							<div class="form-check checkbox-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="tue">
+								<label class="form-check-label" for="inlineCheckbox2">T</label>
+							</div>
+							<div class="form-check checkbox-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="wed">
+								<label class="form-check-label" for="inlineCheckbox3">W</label>
+							</div>
+							<div class="form-check checkbox-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="thu">
+								<label class="form-check-label" for="inlineCheckbox4">Th</label>
+							</div>
+							<div class="form-check checkbox-inline">
+								<input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="fri">
+								<label class="form-check-label" for="inlineCheckbox5">F</label>
+							</div>
+					</div>
+					<br />					
+					<div class="row">
+						<input type="submit" name="submit" value="Send Request">
+					</div>
+						<br />
+					</form>
+					<br />
+					</div>	
+				<div id="footer">
+						<hr />
+						<div id="addressInfo">
+							<div class="content"><p>5555 Nicolet Ave, Minneapolis, MN, 55408</p>
+							<p>(612) 555-9876</p></div>
+						</div>
+					
 		</div>
 	</body>
 </html>
